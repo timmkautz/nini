@@ -226,8 +226,8 @@ namespace Nini.Ini
                         break;
                     }
                 }
-            } catch (Exception ex) {
-                throw ex;
+            } catch (Exception) {
+                throw;
             } finally {
                 // Always close the file
                 reader.Close ();

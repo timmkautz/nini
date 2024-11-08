@@ -19,10 +19,6 @@ using System.Runtime.Serialization.Formatters.Binary;
 namespace Nini.Ini
 {
     /// <include file='IniException.xml' path='//Class[@name="IniException"]/docs/*' />
-#if (NET_COMPACT_1_0)
-#else
-    [Serializable]
-#endif
     public class IniException : SystemException /*, ISerializable */
     {
         #region Private variables
@@ -90,32 +86,25 @@ namespace Nini.Ini
             this.message = message;
         }
 
-#if (NET_COMPACT_1_0)
-#else
         /// <include file='IniException.xml' path='//Constructor[@name="ConstructorSerialize"]/docs/*' />
-        protected IniException (SerializationInfo info, StreamingContext context)
-            : base (info, context)
-        {
-        }
-#endif
+        //protected IniException (SerializationInfo info, StreamingContext context)
+        //    : base (info, context)
+        //{
+        //}
         #endregion
         
         #region Public methods
-#if (NET_COMPACT_1_0)
-#else
         /// <include file='IniException.xml' path='//Method[@name="GetObjectData"]/docs/*' />
-        [SecurityPermissionAttribute(SecurityAction.Demand,SerializationFormatter=true)]
-        public override void GetObjectData (SerializationInfo info, 
-                                            StreamingContext context)
-        {
-            base.GetObjectData (info, context);
-            if (iniReader != null) {
-                info.AddValue ("lineNumber", iniReader.LineNumber);
+        //public override void GetObjectData (SerializationInfo info, 
+        //                                    StreamingContext context)
+        //{
+        //    base.GetObjectData (info, context);
+        //    if (iniReader != null) {
+        //        info.AddValue ("lineNumber", iniReader.LineNumber);
 
-                info.AddValue ("linePosition", iniReader.LinePosition);
-            }
-        }
-#endif
+        //        info.AddValue ("linePosition", iniReader.LinePosition);
+        //    }
+        //}
         #endregion
     }
 }

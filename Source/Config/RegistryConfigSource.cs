@@ -13,6 +13,7 @@ using System.IO;
 using System.Collections;
 using Microsoft.Win32;
 using Nini.Ini;
+using System.Runtime.Versioning;
 
 namespace Nini.Config
 {
@@ -30,6 +31,7 @@ namespace Nini.Config
     #endregion
 
     /// <include file='RegistryConfigSource.xml' path='//Class[@name="RegistryConfigSource"]/docs/*' />
+    [SupportedOSPlatform("windows")]
     public class RegistryConfigSource : ConfigSourceBase
     {
         #region Private variables
