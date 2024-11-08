@@ -16,6 +16,7 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTrademark("Copyright (c) 2006 Brent R. Matzelle. All Rights Reserved.")]
 [assembly: AssemblyDefaultAlias("Nini")]
 [assembly: AssemblyCulture("")]
+[assembly: AssemblyInformationalVersion("8.0")]
 
 [assembly:CLSCompliant(true)] // Required for CLS compliance
 

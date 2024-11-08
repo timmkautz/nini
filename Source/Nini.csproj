@@ -11,7 +11,7 @@
     <OutputType>Library</OutputType>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
     <StartupObject />
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>True</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <BaseAddress>285212672</BaseAddress>
@@ -46,12 +46,13 @@
     </Reference>
   </ItemGroup>
   <PropertyGroup>
-    <AssemblyTitle>Nini for .NET Framework 1.0</AssemblyTitle>
+    <AssemblyTitle>Nini for .NET</AssemblyTitle>
     <Description>.NET Configuration Library - http://nini.sourceforge.net/</Description>
     <Company>Brent R. Matzelle</Company>
     <Product>Nini</Product>
-    <Copyright>Copyright %28c%29 2006 Brent R. Matzelle. All Rights Reserved.</Copyright>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <Copyright>Copyright © 2006 Brent R. Matzelle. All Rights Reserved.</Copyright>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <BaseOutputPath>..\Bin</BaseOutputPath>
+    <Version>1.0.0</Version>
   </PropertyGroup>
 </Project>
